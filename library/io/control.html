@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>io.io_controlnetwork — ISIS Compatible Control Network Creation &mdash; Planetary I/O</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/css/spc-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../_static/css/spc-extend.css">
+    <link rel="stylesheet" href="../../_static/scipy.css" type="text/css" >
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" >
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     'Please install this project with setup.py',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" >
+    <link rel="search" title="Search" href="../../search.html" >
+    <link rel="top" title="Planetary I/O" href="../../index.html" >
+    <link rel="up" title="Input/Output" href="../io.html" >
+    <link rel="next" title="io.isis_serial_number — Generate ISIS3 Compliant Serial Numbers" href="isis_serial_numbers.html" >
+    <link rel="prev" title="AutoCNET graph object (io.io_autocnetgraph)" href="autocnet.html" > 
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="header">
+    </div>
+  </div>
+
+
+    <div class="container">
+      <div class="main">
+        
+	<div class="row-fluid">
+	  <div class="span12">
+	    <div class="spc-navbar">
+              
+    <ul class="nav nav-pills pull-left">
+	
+        <li class="active"><a href="../../index.html">Plio</a></li>
+	
+          <li class="active"><a href="../index.html" >Plio Reference</a></li>
+          <li class="active"><a href="../io.html" accesskey="U">Input/Output</a></li> 
+    </ul>
+              
+              
+    <ul class="nav nav-pills pull-right">
+      <li class="active">
+        <a href="../../genindex.html" title="General Index"
+           accesskey="I">index</a>
+      </li>
+      <li class="active">
+        <a href="../../py-modindex.html" title="Python Module Index"
+           >modules</a>
+      </li>
+      <li class="active">
+        <a href="isis_serial_numbers.html" title="io.isis_serial_number — Generate ISIS3 Compliant Serial Numbers"
+           accesskey="N">next</a>
+      </li>
+      <li class="active">
+        <a href="autocnet.html" title="AutoCNET graph object (io.io_autocnetgraph)"
+           accesskey="P">previous</a>
+      </li>
+    </ul>
+              
+	    </div>
+	  </div>
+	</div>
+        
+
+	<div class="row-fluid">
+      <div class="spc-rightsidebar span3">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/favicon.png" alt="Logo">
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="autocnet.html"
+                        title="previous chapter">AutoCNET graph object (<code class="xref py py-mod docutils literal notranslate"><span class="pre">io.io_autocnetgraph</span></code>)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="isis_serial_numbers.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io.isis_serial_number</span></code> — Generate ISIS3 Compliant Serial Numbers</a></p>
+  <h3>This Page</h3>
+  <div>
+    <a href="../../_sources/library/io/control.rst.txt"
+       rel="nofollow">Show Source</a>
+  </div>
+<div class="this-page-menu">
+  <a href="/scipy/docs/scipy-docs/library/io/control.rst.rst">Edit page</a>
+</div>
+
+        </div>
+      </div>
+          <div class="span9">
+            
+        <div class="bodywrapper">
+          <div class="body" id="spc-section-body">
+            
+  <div class="section" id="io-io-controlnetwork-isis-compatible-control-network-creation">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">io.io_controlnetwork</span></code> — ISIS Compatible Control Network Creation<a class="headerlink" href="#io-io-controlnetwork-isis-compatible-control-network-creation" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">io.io_controlnetwork</span></code> module supports the creation of control networks in ISIS format.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 0.1.0.</span></p>
+</div>
+<span class="target" id="module-plio.io.io_controlnetwork"></span><dl class="class">
+<dt id="plio.io.io_controlnetwork.IsisControlNetwork">
+<em class="property">class </em><code class="descclassname">plio.io.io_controlnetwork.</code><code class="descname">IsisControlNetwork</code><span class="sig-paren">(</span><em>data=None</em>, <em>index=None</em>, <em>columns=None</em>, <em>dtype=None</em>, <em>copy=False</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisControlNetwork"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisControlNetwork" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="plio.io.io_controlnetwork.IsisStore">
+<em class="property">class </em><code class="descclassname">plio.io.io_controlnetwork.</code><code class="descname">IsisStore</code><span class="sig-paren">(</span><em>path</em>, <em>mode=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisStore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to manage IO of an ISIS control network (version 2).</p>
+<dl class="attribute">
+<dt id="plio.io.io_controlnetwork.IsisStore.pointid">
+<code class="descname">pointid</code><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore.pointid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current index to be assigned to newly added points</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="plio.io.io_controlnetwork.IsisStore.create_buffer_header">
+<code class="descname">create_buffer_header</code><span class="sig-paren">(</span><em>networkid</em>, <em>targetname</em>, <em>description</em>, <em>username</em>, <em>point_sizes</em>, <em>creation_date</em>, <em>modified_date</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisStore.create_buffer_header"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore.create_buffer_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the Google Protocol Buffer header using the
+protobuf spec.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>networkid</strong> (<em>str</em>) – The user defined identifier of this control network</p></li>
+<li><p><strong>targetname</strong> (<em>str</em>) – The name of the target, e.g. Moon</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – A description for the network.</p></li>
+<li><p><strong>username</strong> (<em>str</em>) – The name of the user / application that created the control network</p></li>
+<li><p><strong>point_sizes</strong> (<em>list</em>) – of the point sizes for each point message</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>header_message</strong> (<em>str</em>) – The serialized message to write</p></li>
+<li><p><strong>header_message_size</strong> (<em>int</em>) – The size of the serialized header, in bytes</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="plio.io.io_controlnetwork.IsisStore.create_points">
+<code class="descname">create_points</code><span class="sig-paren">(</span><em>df</em>, <em>serials</em>, <em>pointid_prefix</em>, <em>pointid_suffix</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisStore.create_points"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore.create_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Step through a control network (C) and return protocol buffer point objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>DataFrame</em>) – with the appropriate attributes: point_id, point_type, serial,
+measure_type, x, y required.
+The entries in the list must support grouping by the point_id attribute.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>point_messages</strong> (<em>list</em>) – of serialized points buffers</p></li>
+<li><p><strong>point_sizes</strong> (<em>list</em>) – of integer point sizes</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="plio.io.io_controlnetwork.IsisStore.create_pvl_header">
+<code class="descname">create_pvl_header</code><span class="sig-paren">(</span><em>version</em>, <em>headerstartbyte</em>, <em>networkid</em>, <em>targetname</em>, <em>description</em>, <em>username</em>, <em>buffer_header_size</em>, <em>points_bytes</em>, <em>creation_date</em>, <em>modified_date</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisStore.create_pvl_header"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore.create_pvl_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the PVL header object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>version</strong> (<em>int</em>) – The current ISIS version to write, defaults to 2</p></li>
+<li><p><strong>headerstartbyte</strong> (<em>int</em>) – The seek offset that the protocol buffer header starts at</p></li>
+<li><p><strong>networkid</strong> (<em>str</em>) – The name of the network</p></li>
+<li><p><strong>targetname</strong> (<em>str</em>) – The name of the target, e.g. Moon</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – A description for the network.</p></li>
+<li><p><strong>username</strong> (<em>str</em>) – The name of the user / application that created the control network</p></li>
+<li><p><strong>buffer_header_size</strong> (<em>int</em>) – Total size of the header in bytes</p></li>
+<li><p><strong>points_bytes</strong> (<em>int</em>) – The total number of bytes all points require</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An ISIS compliant PVL header object</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="plio.io.io_controlnetwork.IsisStore.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisStore.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given an ISIS store, read the underlying ISIS3 compatible control network and
+return an IsisControlNetwork dataframe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="plio.io.io_controlnetwork.IsisStore.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>data</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#IsisStore.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.IsisStore.write" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>str</em>) – to be written to the file</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – The byte offset into the output binary</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="plio.io.io_controlnetwork.to_isis">
+<code class="descclassname">plio.io.io_controlnetwork.</code><code class="descname">to_isis</code><span class="sig-paren">(</span><em>path</em>, <em>obj</em>, <em>serials</em>, <em>mode='wb'</em>, <em>version=2</em>, <em>headerstartbyte=65536</em>, <em>networkid='None'</em>, <em>targetname='None'</em>, <em>description='None'</em>, <em>username='None'</em>, <em>creation_date=None</em>, <em>modified_date=None</em>, <em>pointid_prefix=None</em>, <em>pointid_suffix=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#to_isis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.to_isis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write an AutoCNET Candidate graph object to an ISIS3 compatible control
+network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – Input path where the file is to be written</p></li>
+<li><p><strong>network</strong> (<em>dict</em>) – A dict of lists keyed with a</p></li>
+<li><p><strong>mode</strong> (<em>{'a'</em><em>, </em><em>'w'</em><em>, </em><em>'r'</em><em>, </em><em>'r+'}</em>) – <dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">'r'</span></code></dt><dd><p>Read-only; no data can be modified.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">'w'</span></code></dt><dd><p>Write; a new file is created (an existing file with the same
+name would be deleted).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">'a'</span></code></dt><dd><p>Append; an existing file is opened for reading and writing,
+and if the file does not exist it is created.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">'r+'</span></code></dt><dd><p>It is similar to <code class="docutils literal notranslate"><span class="pre">'a'</span></code>, but the file must already exist.</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>version</strong> (<em>int</em>) – The current ISIS version to write, defaults to 2</p></li>
+<li><p><strong>headerstartbyte</strong> (<em>int</em>) – The seek offset that the protocol buffer header starts at</p></li>
+<li><p><strong>networkid</strong> (<em>str</em>) – The name of the network</p></li>
+<li><p><strong>targetname</strong> (<em>str</em>) – The name of the target, e.g. Moon</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – A description for the network.</p></li>
+<li><p><strong>username</strong> (<em>str</em>) – The name of the user / application that created the control network</p></li>
+<li><p><strong>pointid_prefix</strong> (<em>str</em>) – Prefix to be added to the pointid.  If the prefix is ‘<a href="#id1"><span class="problematic" id="id2">foo_</span></a>’, pointids
+will be in the form ‘foo_1, foo_2, …, foo_n’</p></li>
+<li><p><strong>pointid_suffix</strong> (<em>str</em>) – Suffix to tbe added to the point id.  If the suffix is ‘_bar’, pointids
+will be in the form ‘1_bar, 2_bar, …, n_bar’.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="plio.io.io_controlnetwork.write_filelist">
+<code class="descclassname">plio.io.io_controlnetwork.</code><code class="descname">write_filelist</code><span class="sig-paren">(</span><em>lst</em>, <em>path='fromlist.lis'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/plio/io/io_controlnetwork.html#write_filelist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#plio.io.io_controlnetwork.write_filelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a filelist to a file so it can be used in ISIS3.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lst</strong> (<em>list</em>) – A list containing full paths to the images used, as strings.</p></li>
+<li><p><strong>path</strong> (<em>str</em>) – The name of the file to write out. Default: fromlist.lis</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-navbar-bottom">
+      <div class="spc-navbar">
+        
+      </div>
+    </div>
+    <div class="container">
+    <div class="footer">
+    <div class="row-fluid">
+    <ul class="inline pull-left">
+      <li>
+        &copy; Copyright 2017 - , Plio Developers.
+      </li>
+      <li>
+      Last updated on May 01, 2019.
+      </li>
+      <li>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 2.0.1.
+      </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
